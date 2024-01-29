@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var authViewModel = AuthViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if authViewModel.isSignedIn, let user = authViewModel.currentUser {
+                UserView(user: user)
+            } else {
+                AppleSigninButton(authViewModel: authViewModel)
+            }
+        }
+        .frame(height:UIScreen.main.bounds.height)
+        .background(Color.white)
+    
     }
 }
 

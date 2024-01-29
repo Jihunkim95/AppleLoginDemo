@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class AuthViewModel: ObservableObject {
+    @Published var isSignedIn = false
+    @Published var currentUser: User?
+}

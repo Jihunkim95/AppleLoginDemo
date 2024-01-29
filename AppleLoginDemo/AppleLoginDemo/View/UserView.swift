@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct UserView: View {
+    var user: User
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Welcome, \(user.name ?? "User")")
+            Text("Email: \(user.email ?? "Not available")")
+            Text("authorizationCode: \(user.authorizationCode ?? "ㅇㅇ")")
+            Text("identityToken: \(user.identityToken ?? "ㅇ")")
+            // 다른 사용자 정보 표시
+        }
     }
 }
 
-#Preview {
-    UserView()
-}
