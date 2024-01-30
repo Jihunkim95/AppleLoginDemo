@@ -12,6 +12,7 @@ struct UserView: View {
 
     var body: some View {
         VStack {
+            Text("uid: \(user.uid ?? "Not available")")
             Text("Welcome, \(user.name ?? "User")")
             Text("Email: \(user.email ?? "Not available")")
             Text("authorizationCode: \(user.authorizationCode ?? "ㅇㅇ")")

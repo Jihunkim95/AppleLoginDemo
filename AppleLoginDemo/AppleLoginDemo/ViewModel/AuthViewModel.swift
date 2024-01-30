@@ -23,7 +23,7 @@ class AuthViewModel: NSObject, ObservableObject, ASAuthorizationControllerDelega
 
             DispatchQueue.main.async {
                 self.currentUser = User(
-                    userIdentifier: userIdentifier,
+                    uid: userIdentifier,
                     name: name,
                     email: email,
                     identityToken: identityToken,

@@ -8,7 +8,7 @@
 import Foundation
 
 struct User {
-    var userIdentifier: String
+    var uid: String
     var name: String?
     var email: String?
     var identityToken: String?
