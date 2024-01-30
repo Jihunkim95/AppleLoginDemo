@@ -12,11 +12,11 @@ struct UserView: View {
 
     var body: some View {
         VStack {
-            Text("uid: \(user.uid ?? "Not available")")
-            Text("Welcome, \(user.name ?? "User")")
-            Text("Email: \(user.email ?? "Not available")")
-            Text("authorizationCode: \(user.authorizationCode ?? "ㅇㅇ")")
-            Text("identityToken: \(user.identityToken ?? "ㅇ")")
+            Text("uid: \(user.id ?? "Not available")")
+            Text("Welcome, \(user.loginId ?? "User")")
+            Text("Email: \(user.nickname ?? "Not available")")
+//            Text("authorizationCode: \(user.authorizationCode ?? "ㅇㅇ")")
+//            Text("identityToken: \(user.identityToken ?? "ㅇ")")
             // 다른 사용자 정보 표시
         }
     }

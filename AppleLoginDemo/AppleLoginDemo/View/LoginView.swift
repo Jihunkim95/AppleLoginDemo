@@ -9,14 +9,16 @@ import SwiftUI
 import AuthenticationServices
 
 struct LoginView: View {
-    @StateObject var authViewModel = AuthViewModel()
+    var appleAuthManager = AppleAuthManager()
+    @State private var isSignedIn = false
+    @State private var currentUser: User?
 
     var body: some View {
-        VStack {
-            if authViewModel.isSignedIn, let user = authViewModel.currentUser {
+
+            if isSignedIn, let user = currentUser {
+//                Text("ddd")
                 UserView(user: user)
             } else {
-                
                 Button(action: startAppleSignIn) {
                     ZStack {
                         Image("AppleLogo")
@@ -28,18 +30,22 @@ struct LoginView: View {
                 .frame(width: UIScreen.main.bounds.width * 0.9, height: 50)
                 .cornerRadius(5)
             }
-        }
-        .frame(height:UIScreen.main.bounds.height)
-        .background(Color.white)
+
 
     }
-    
+
     private func startAppleSignIn() {
+        
+        appleAuthManager.didChangeSignInStatus = { signedIn, user in
+            self.isSignedIn = signedIn
+            self.currentUser = user
+        }
+        
         let request = ASAuthorizationAppleIDProvider().createRequest()
         request.requestedScopes = [.fullName, .email]
 
         let controller = ASAuthorizationController(authorizationRequests: [request])
-        controller.delegate = authViewModel
+        controller.delegate = appleAuthManager
         controller.performRequests()
     }
 }
