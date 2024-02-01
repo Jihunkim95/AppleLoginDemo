@@ -14,7 +14,7 @@ class FirestoreService {
 
     private init() {}
 
-    func saveUserToFirestore(user: User) {
+    func saveUserToFirestore(user: UserModel) {
         let db = Firestore.firestore()
 
         let userData = [
@@ -25,7 +25,7 @@ class FirestoreService {
             "fcmToken": user.fcmToken ?? ""
         ] as [String : Any]
 
-        db.collection("User").document(user.id ?? "").setData(userData) { error in
+        db.collection("UserModel").document(user.id ?? "").setData(userData) { error in
             if let error = error {
                 print("Error writing document: \(error)")
             } else {

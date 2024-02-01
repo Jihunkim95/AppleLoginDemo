@@ -11,7 +11,7 @@ import AuthenticationServices
 struct LoginView: View {
     var appleAuthManager = AppleAuthManager()
     @State private var isSignedIn = false
-    @State private var currentUser: User?
+    @State private var currentUser: UserModel?
 
     var body: some View {
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Identifiable {
+struct UserModel: Identifiable {
     var id: String?                    //고유 아이디 CI 값
     var loginId: String?                //로그인 아이디
     var passsword: String?                //비밀번호
@@ -20,10 +20,3 @@ struct User: Identifiable {
     var fcmToken: String?                //fcm 토큰
 }
 
-//struct User {
-//    var uid: String
-//    var name: String?
-//    var email: String?
-//    var identityToken: String?
-//    var authorizationCode: String?
-//}

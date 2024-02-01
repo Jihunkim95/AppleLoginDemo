@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserView: View {
-    var user: User
+    var user: UserModel
 
     var body: some View {
         VStack {

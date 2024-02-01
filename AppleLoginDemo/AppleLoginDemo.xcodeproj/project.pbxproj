@@ -10,7 +10,7 @@
 		5CE454342B67A25100874BCE /* AppleLoginDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE454332B67A25100874BCE /* AppleLoginDemoApp.swift */; };
 		5CE454382B67A25400874BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE454372B67A25400874BCE /* Assets.xcassets */; };
 		5CE4543B2B67A25400874BCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE4543A2B67A25400874BCE /* Preview Assets.xcassets */; };
-		5CE454422B67A2EC00874BCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE454412B67A2EC00874BCE /* User.swift */; };
+		5CE454422B67A2EC00874BCE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE454412B67A2EC00874BCE /* UserModel.swift */; };
 		5CE454442B67A2F900874BCE /* AppleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE454432B67A2F900874BCE /* AppleAuthManager.swift */; };
 		5CE454482B67A31C00874BCE /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE454472B67A31C00874BCE /* UserView.swift */; };
 		5CE4544D2B67A3AF00874BCE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4544C2B67A3AF00874BCE /* LoginView.swift */; };
@@ -51,7 +51,7 @@
 		5CE454332B67A25100874BCE /* AppleLoginDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginDemoApp.swift; sourceTree = "<group>"; };
 		5CE454372B67A25400874BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE4543A2B67A25400874BCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5CE454412B67A2EC00874BCE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5CE454412B67A2EC00874BCE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5CE454432B67A2F900874BCE /* AppleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthManager.swift; sourceTree = "<group>"; };
 		5CE454472B67A31C00874BCE /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		5CE4544C2B67A3AF00874BCE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		5CE4544A2B67A35500874BCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5CE454412B67A2EC00874BCE /* User.swift */,
+				5CE454412B67A2EC00874BCE /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				5CE454442B67A2F900874BCE /* AppleAuthManager.swift in Sources */,
 				5CE454342B67A25100874BCE /* AppleLoginDemoApp.swift in Sources */,
 				5CE454482B67A31C00874BCE /* UserView.swift in Sources */,
-				5CE454422B67A2EC00874BCE /* User.swift in Sources */,
+				5CE454422B67A2EC00874BCE /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
